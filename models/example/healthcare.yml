@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: healthcare_snf_src
+    data_base: healthcare_db
+    data_schema: healthcare_sch
+    tables:
+      - name: APPOINTMENTS
+      - name: BILLING
+      - name: DIAGNOSES
+      - name: DOCTORS
+      - name: LABTESTS
+      - name: PATIENTS
+      - name: PRESCRIPTIONS
