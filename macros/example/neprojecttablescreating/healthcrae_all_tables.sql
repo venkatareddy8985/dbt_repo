@@ -101,3 +101,7 @@ create or replace  table {{database_name}}.{{schema_name}}.{{table_name7}}
 {% do run_query(create_tbl7) %}
 
 {% endmacro %}
+
+--- dbt run-operation healthcrae_all_tables_mco --args "{'database_name':'dbt_helhos_db','schema_name':'dbt_helhos_sc',
+'table_name1':'DOCTORS','table_name2':'PATIENTS','table_name3':'PRESCRIPTION','table_name4':'LABTESTS','table_name5':'DIAGNOSES',
+'table_name6':'BILLINGS','table_name7':'APPOINTMENTS'}"

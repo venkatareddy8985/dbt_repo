@@ -13,3 +13,4 @@ aws_sns_role_arn='arn:aws:iam::743938722121:role/dbt_healthcare_fulldata_role';
 {% do run_query(create_notifi_integra) %}
 {% endmacro %}
 
+---dbt run-operation sns_gmail_alerts_notification_mco --args "{'notification_integration_name':'dbt_error_notification_integration'}"

@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: dbt_helhos_src_snf
+    database: DBT_HELHOS_DB
+    schema: DBT_HELHOS_SC
+    tables:
+      - name: APPOINTMENTS
+      - name: BILLINGS
+      - name: DIAGNOSES
+      - name: DOCTORS
+      - name: LABTESTS
+      - name: PATIENTS
+      - name: PRESCRIPTION
